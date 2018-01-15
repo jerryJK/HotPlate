@@ -1,0 +1,65 @@
+#section-intro {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../images/background-main.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    .text-intro-welcome {
+        font-family: $logo-font-family;
+        font-weight: lighter;
+        color: $text-style-color;
+        font-size: 2.5rem;
+    }
+
+    .text-intro-name {
+        font-family: $main-font-family;
+        font-size: 2.5rem;
+    }
+
+    .text-intro-bottom {
+        font-family: $main-font-family;
+        color: $text-style-color;
+
+        span {
+            border-top: 1px solid $text-style-color;
+            border-bottom: 1px solid $text-style-color;
+            display: inline-block;
+            width: 200px;
+        }
+    }
+
+    .btn-intro {
+        background-color: rgba(174, 166, 148, 0.3);
+        width: 120px;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: rgba(174, 166, 148, 0.45);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #section-intro {
+        min-height: 100vh;
+        width: 100%;
+        background-image: url("../images/background-main.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        .text-welcome {
+            font-family: $logo-font-family;
+            font-weight: lighter;
+            color: $text-style-color;
+            font-size: 4rem;
+        }
+
+        .text-intro-name {
+            font-family: $main-font-family;
+            font-size: 4rem;
+        }
+    }
+}
