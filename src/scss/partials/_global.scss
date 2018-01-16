@@ -10,6 +10,11 @@ body {
   color: white;
 }
 
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
 .btn.active,
 .btn:active,
 .btn:focus,

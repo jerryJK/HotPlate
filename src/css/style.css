@@ -8,6 +8,10 @@ body {
   font-family: "Lato", sans-serif;
   color: white; }
 
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important; }
+
 .btn.active,
 .btn:active,
 .btn:focus,
@@ -92,3 +96,95 @@ h1.fromLeft:after{  transform-origin:  0% 50%; }*/
     #section-intro .text-intro-name {
       font-family: "Lato", sans-serif;
       font-size: 4rem; } }
+
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto; }
+
+.about-row {
+  padding: 60px 0; }
+
+.slick {
+  transition: all 0.2s ease-in-out; }
+
+.slick-slide {
+  transform: scale(1, 1);
+  position: relative;
+  outline: none;
+  transition: all 0.2s ease-in-out; }
+
+.slick-current {
+  transform: scale(1.1, 1.1);
+  z-index: 2;
+  overflow: hidden; }
+
+.slick-active {
+  cursor: pointer; }
+
+.slick-center {
+  transform: scale(1.1, 1.1);
+  z-index: 2;
+  overflow: hidden; }
+
+.slick-slide .slider-item {
+  display: block;
+  width: 100%;
+  height: 340px;
+  background-color: #191307; }
+  .slick-slide .slider-item--second {
+    background-image: url("../images/c1.jpg"); }
+  .slick-slide .slider-item--third {
+    background-image: url("../images/c2.jpg"); }
+  .slick-slide .slider-item--fourth {
+    background-image: url("../images/c3.jpg"); }
+
+.slick-list {
+  overflow: visible; }
+
+.item-border {
+  border: 1px dashed rgba(174, 166, 148, 0.6);
+  height: 90%;
+  width: 90%; }
+
+.item-content {
+  padding: 5px;
+  max-height: 100%; }
+  .item-content .content-title-first {
+    font-family: 'Allura', cursive;
+    color: #aea694;
+    font-size: 2.2rem;
+    margin: 0; }
+  .item-content .content-title-second {
+    font-size: 1.4rem;
+    position: relative;
+    top: -15px;
+    margin: 0; }
+  .item-content .content-text {
+    font-size: 0.6rem;
+    color: #aea694; }
+  .item-content .content-chef-image {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 5px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url("../images/chef.jpg");
+    background-position: center;
+    background-size: contain; }
+  .item-content .content-chef-name {
+    margin-top: 10px;
+    font-size: 0.9rem; }
+  .item-content .content-chef-title {
+    color: #aea694;
+    font-size: 0.7rem; }
+
+@media (min-width: 768px) {
+  .slider-wrapper {
+    margin: 50px auto; }
+  .slick-center {
+    transform: scale(1.3, 1.3); }
+  .slick-slide .slider-item {
+    height: 380px; }
+  .item-content .content-text {
+    font-size: 0.8rem; } }
