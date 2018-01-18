@@ -1,0 +1,109 @@
+#section-menu {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../images/m1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .menu-wrapper {
+      height: 100%;
+    }
+
+    .menu {
+        width: 90%;
+        height: 90%;
+        .menu-left {
+          background-color: rgb(25, 19, 7);
+          padding: 10px 15px;
+        }
+        .menu-right {
+          background-color: white;
+        }
+    }
+
+    .menu-left
+    .menu-border {
+      border: 1px dashed rgba(174, 166, 148,0.6);
+      width: 95%;
+      height: 95%;
+    }
+
+    .menu-left-content,
+    .menu-right-content {
+      padding: 5px;
+      max-height: 100%;
+      .menu-title-first {
+        font-family:'Allura', cursive;
+        color:rgb(174, 166, 148);
+        font-size: 2.3rem;
+        margin: 0;
+      }
+      .menu-title-second {
+        font-size: 1.6rem;
+        position: relative;
+        top: -15px;
+        margin: 0;
+      }
+  }
+
+  .menu-list {
+    list-style-type: none;
+    padding-bottom: 40px;
+      .menu-list-item {
+          font-size: 1.2rem;
+          padding: 5px;
+          a {
+            color: rgb(174, 166, 148);
+            text-decoration: none;
+            transition: .15s all;
+            &:hover {
+              color: white;
+            }
+            &.active {
+              color:white;
+            }
+          }
+      }
+  }
+
+  .active-menu-list {
+    list-style-type: none;
+    color: rgb(25, 19, 7);
+    padding-left: 0 !important;
+    margin: 10%;
+
+     .active-list-item {
+       margin-top: 10px;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(174, 166, 148, 0.3);
+        i {
+          display: block;
+          font-size: .9rem;
+          color: rgb(174, 166, 148);
+          &.dish-price {
+            color: rgb(25, 19, 7);
+            font-size: .9rem;
+            padding-top:3px;
+          }
+        }
+     }
+  }
+
+}
+@media (min-width: 768px) {
+  #section-menu {
+    height: 100vh;
+    .menu {
+      width: 80%;
+      height: 80%;
+    }
+    .menu-list {
+      margin-top: 20px;
+      padding-bottom: 0;
+      .menu-list-item {
+          font-size: 1.3rem;
+      }
+    }
+  }
+}

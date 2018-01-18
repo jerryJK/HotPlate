@@ -188,3 +188,85 @@ h1.fromLeft:after{  transform-origin:  0% 50%; }*/
     height: 380px; }
   .item-content .content-text {
     font-size: 0.8rem; } }
+
+#section-menu {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../images/m1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  #section-menu .menu-wrapper {
+    height: 100%; }
+  #section-menu .menu {
+    width: 90%;
+    height: 90%; }
+    #section-menu .menu .menu-left {
+      background-color: #191307;
+      padding: 10px 15px; }
+    #section-menu .menu .menu-right {
+      background-color: white; }
+  #section-menu .menu-left
+.menu-border {
+    border: 1px dashed rgba(174, 166, 148, 0.6);
+    width: 95%;
+    height: 95%; }
+  #section-menu .menu-left-content,
+  #section-menu .menu-right-content {
+    padding: 5px;
+    max-height: 100%; }
+    #section-menu .menu-left-content .menu-title-first,
+    #section-menu .menu-right-content .menu-title-first {
+      font-family: 'Allura', cursive;
+      color: #aea694;
+      font-size: 2.3rem;
+      margin: 0; }
+    #section-menu .menu-left-content .menu-title-second,
+    #section-menu .menu-right-content .menu-title-second {
+      font-size: 1.6rem;
+      position: relative;
+      top: -15px;
+      margin: 0; }
+  #section-menu .menu-list {
+    list-style-type: none;
+    padding-bottom: 40px; }
+    #section-menu .menu-list .menu-list-item {
+      font-size: 1.2rem;
+      padding: 5px; }
+      #section-menu .menu-list .menu-list-item a {
+        color: #aea694;
+        text-decoration: none;
+        transition: .15s all; }
+        #section-menu .menu-list .menu-list-item a:hover {
+          color: white; }
+        #section-menu .menu-list .menu-list-item a.active {
+          color: white; }
+  #section-menu .active-menu-list {
+    list-style-type: none;
+    color: #191307;
+    padding-left: 0 !important;
+    margin: 10%; }
+    #section-menu .active-menu-list .active-list-item {
+      margin-top: 10px;
+      font-size: 1rem;
+      border-bottom: 1px solid rgba(174, 166, 148, 0.3); }
+      #section-menu .active-menu-list .active-list-item i {
+        display: block;
+        font-size: .9rem;
+        color: #aea694; }
+        #section-menu .active-menu-list .active-list-item i.dish-price {
+          color: #191307;
+          font-size: .9rem;
+          padding-top: 3px; }
+
+@media (min-width: 768px) {
+  #section-menu {
+    height: 100vh; }
+    #section-menu .menu {
+      width: 80%;
+      height: 80%; }
+    #section-menu .menu-list {
+      margin-top: 20px;
+      padding-bottom: 0; }
+      #section-menu .menu-list .menu-list-item {
+        font-size: 1.3rem; } }
