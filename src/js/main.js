@@ -49,7 +49,7 @@ $(document).on('ready', function() {
           var	listElem	=	$("<li>",	{class:	"active-list-item"});
           var nameElem =  $("<p class='d-inline'>" + elem.name + "</p>");
           var priceElem =  $("<i class='dish-price float-right'>&euro; " + elem.price + "</i>");
-          var descElem =  $("<i>" + elem.desc + "</i>");
+          var descElem =  $("<i class='dish-desc'>" + elem.desc + "</i>");
 
           listElem.append(nameElem);
           listElem.append(priceElem);

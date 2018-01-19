@@ -195,7 +195,8 @@ h1.fromLeft:after{  transform-origin:  0% 50%; }*/
   background-image: url("../images/m1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  padding: 10px; }
   #section-menu .menu-wrapper {
     height: 100%; }
   #section-menu .menu {
@@ -270,3 +271,82 @@ h1.fromLeft:after{  transform-origin:  0% 50%; }*/
       padding-bottom: 0; }
       #section-menu .menu-list .menu-list-item {
         font-size: 1.3rem; } }
+
+#section-events {
+  padding: 20px 0; }
+  #section-events .events-row--first {
+    padding-bottom: 20px; }
+  #section-events .event-image-main1 {
+    max-width: 570px;
+    height: 400px;
+    background-image: url("../images/event2.jpg");
+    background-position: center;
+    margin: 0 auto; }
+  #section-events .event-image-main2 {
+    position: relative;
+    top: -100px;
+    max-width: 400px;
+    height: 400px;
+    background-image: url("../images/event1.jpg");
+    background-position: center;
+    margin: 0 auto; }
+  #section-events .events-title-first {
+    font-family: 'Allura', cursive;
+    color: #aea694;
+    font-size: 2.5rem;
+    margin: 0; }
+  #section-events .events-title-second {
+    font-size: 1.7rem;
+    position: relative;
+    top: -15px;
+    margin: 0; }
+  #section-events .events-text {
+    font-size: .8rem; }
+  #section-events .events-titles-wrapper {
+    height: 300px; }
+    #section-events .events-titles-wrapper .events-titles {
+      height: 100%;
+      width: 80%;
+      background-color: #191307; }
+  #section-events .event-name {
+    font-size: 1.3rem;
+    padding-left: 5px;
+    font-family: 'Allura', cursive;
+    color: #aea694;
+    margin-bottom: 5px; }
+  #section-events .image-lower,
+  #section-events .image-upper {
+    height: 120px;
+    width: 120px;
+    position: relative; }
+  #section-events .image-lower {
+    top: -30px;
+    left: 60px;
+    background-image: url("../images/event-lower.jpg");
+    background-position: center; }
+  #section-events .image-upper {
+    background-image: url("../images/event-upper.jpg");
+    background-position: center;
+    background-size: contain; }
+
+@media (min-width: 768px) {
+  #section-events {
+    padding: 50px 0; }
+    #section-events .events-row--first {
+      padding-bottom: 40px; }
+    #section-events .event-name {
+      font-size: 1.7rem;
+      padding-left: 50px;
+      font-family: 'Allura', cursive;
+      color: #aea694; }
+    #section-events .events-text {
+      font-size: 1rem; }
+    #section-events .image-lower,
+    #section-events .image-upper {
+      height: 170px;
+      width: 220px;
+      position: relative; }
+    #section-events .image-lower {
+      top: -40px;
+      left: 110px;
+      background-position: center; } }

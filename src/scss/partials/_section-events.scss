@@ -1,0 +1,115 @@
+#section-events {
+    padding: 20px 0;
+
+    .events-row--first {
+        padding-bottom: 20px;
+    }
+
+    .event-image-main1 {
+        max-width: 570px;
+        height: 400px;
+        background-image: url('../images/event2.jpg');
+        background-position: center;
+        margin: 0 auto;
+    }
+
+    .event-image-main2 {
+        position: relative;
+        top: -100px;
+        max-width: 400px;
+        height: 400px;
+        background-image: url('../images/event1.jpg');
+        background-position: center;
+        margin: 0 auto;
+    }
+
+    .events-title-first {
+        font-family: 'Allura', cursive;
+        color: $text-style-color;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .events-title-second {
+        font-size: 1.7rem;
+        position: relative;
+        top: -15px;
+        margin: 0;
+    }
+
+    .events-text {
+      font-size: .8rem;
+    }
+
+    .events-titles-wrapper {
+        height: 300px;
+
+        .events-titles {
+            height: 100%;
+            width: 80%;
+            background-color: rgb(25, 19, 7);
+        }
+    }
+
+    .event-name {
+        font-size: 1.3rem;
+        padding-left: 5px;
+        font-family: 'Allura', cursive;
+        color: $text-style-color;
+        margin-bottom: 5px;
+    }
+
+    .image-lower,
+    .image-upper {
+        height: 120px;
+        width: 120px;
+        position: relative;
+    }
+
+    .image-lower {
+        top: -30px;
+        left: 60px;
+        background-image: url('../images/event-lower.jpg');
+        background-position: center;
+    }
+
+    .image-upper {
+        background-image: url('../images/event-upper.jpg');
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+@media (min-width: 768px) {
+    #section-events {
+        padding: 50px 0;
+
+        .events-row--first {
+            padding-bottom: 40px;
+        }
+
+        .event-name {
+            font-size: 1.7rem;
+            padding-left: 50px;
+            font-family: 'Allura', cursive;
+            color: $text-style-color;
+        }
+
+        .events-text {
+          font-size: 1rem;
+        }
+
+        .image-lower,
+        .image-upper {
+            height: 170px;
+            width: 220px;
+            position: relative;
+        }
+
+        .image-lower {
+            top: -40px;
+            left: 110px;
+            background-position: center;
+        }
+    }
+}
