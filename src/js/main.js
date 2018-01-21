@@ -1,4 +1,5 @@
-$(document).on('ready', function() {
+
+$(function(){
 
     //menu data
     data = {

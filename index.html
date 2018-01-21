@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="src/fonts/lato-font.css">
-      <link rel="stylesheet" href="src/fonts/allura-font.css">
+    <link rel="stylesheet" href="src/fonts/allura-font.css">
     <link rel="stylesheet" href="src/css/bootstrap.css">
+    <link rel="stylesheet" href="src/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="src/css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="./src/css/slick.css">
     <link rel="stylesheet" type="text/css" href="./src/css/slick-theme.css">
     <link rel="stylesheet" href="src/css/style.css">
@@ -31,16 +33,13 @@
                         <a href="#home" class="nav-link link-menu">Home</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a href="#section-team" class="nav-link link-menu">Restaurant</a>
+                        <a href="#section-restaurant" class="nav-link link-menu">Restaurant</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a href="#section-team" class="nav-link link-menu">Menu</a>
+                        <a href="#section-menu" class="nav-link link-menu">Menu</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a href="#section-snowboarding" class="nav-link link-menu">Events</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a href="#section-gallery" class="nav-link link-menu">Gallery</a>
+                        <a href="#section-events" class="nav-link link-menu">Events</a>
                     </li>
                     <li class="nav-item px-3">
                         <a href="#section-contact" class="nav-link link-menu">Contact</a>
@@ -72,13 +71,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mx-auto mt-5 pt-5">
-                    <h3 class="text-intro-welcome text-center text-welcome">Welcome to</h3>
-                    <h3 class="text-intro-name text-center text-uppercase">The HotPlate</h3>
-                    <p class="text-intro-bottom text-center text-uppercase">
+                    <h3 class="text-intro-welcome text-center text-welcome wow animated fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">Welcome to</h3>
+                    <h3 class="text-intro-name text-center text-uppercase wow animated fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">The HotPlate</h3>
+                    <p class="text-intro-bottom text-center text-uppercase wow animated fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
                       <span class="my-2">RESTAURANT</span>
                     </p>
-                    <div class="d-flex justify-content-center">
-                        <a href="#section-team" class="btn btn-intro text-white">
+                    <div class="d-flex justify-content-center wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <a href="#section-restaurant" class="btn btn-intro text-white">
                             See more
                         </a>
                     </div>
@@ -124,7 +123,7 @@
     <!-- SECTION-MENU-->
     <section id="section-menu">
       <div class="menu-wrapper d-flex justify-content-center align-items-center">
-          <div class="menu row">
+          <div class="menu row wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
               <div class="menu-left col-md-4 d-flex justify-content-center align-items-center">
                   <div class="menu-border">
                       <div class="menu-left-content text-center">
@@ -172,12 +171,12 @@
                       totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Aaccusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.Dunde omnis iste natus.</p>
               </div>
               <div class="col-md-6">
-                  <div class="event-image-main1"></div>
+                  <div class="event-image-main1 wow slideInUp" data-wow-duration="1500ms" data-wow-delay="100ms"></div>
               </div>
           </div>
           <div class="row events-row events-row--second text-dark">
               <div class="d-none d-sm-block col-md-4">
-                  <div class="event-image-main2"></div>
+                  <div class="event-image-main2 wow fadeIn" data-wow-duration="1800ms" data-wow-delay="100ms"></div>
               </div>
               <div class="col-md-8 events-titles-wrapper">
                   <div class="row">
@@ -199,13 +198,55 @@
       </div>
     </section>
 
+    <!-- SECTION-CONTACT-->
+    <section id="section-contact" class="wow fadeInUp" data-wow-duration="800ms" data-wow-delay="400ms">
+        <div class="container">
+            <p class="contact-title-first">Be in touch</p>
+            <p class="contact-title-second">CONTACT US</p>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed/v1/place?q=rynek%20g%C5%82%C3%B3wny%2020&key=AIzaSyCIttcccef1Z-pTs9sMKHygBVbUe1qmDSU" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="contact-bottom">
+            <div class="container">
+                  <div class="row">
+                        <div class="left col-sm-6">
+                            <p class="bottom-title">Hot Plate</p>
+                            <ul class="address">
+                                <li class="address-line">Rynek Główny 20</li>
+                                <li class="address-line">30-425 Cracow</li>
+                                <li class="address-line">tel/fax: 48 2554554/2556688</li>
+                            </ul>
+                        </div>
+                        <div class="right col-sm-6">
+                            <div class="news-wrapper float-right">
+                                <p class="newsletter-title">NEWSLETTER</p>
+                                <div>
+                                  <input class="newsletter-input form-input" type="email" name="email" placeholder="Enter your email">
+                                  <input class="newsletter-submit" type="submit" value="Send">
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+            </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer-main">
+      <p class="text-center">&copy 2018 HotPlate. All rights reserved</p>
+    </footer>
 
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/popper.min.js"></script>
     <script src="src/js/bootstrap.min.js"></script>
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="src/js/navbar-fixed.js"></script>
+    <script src="src/js/baguetteBox.min.js"></script>
+    <script src="src/js/wow.min.js"></script>
     <script src="./src/js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <script src="src/js/main.js"></script>
 </body>
 

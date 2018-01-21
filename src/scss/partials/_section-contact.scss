@@ -1,0 +1,116 @@
+#section-contact {
+    background-color: rgb(25, 19, 7);
+    background-image: url('../images/background-contact.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0 0;
+    margin-top: -40px;
+
+    .contact-title-first {
+        font-family: 'Allura', cursive;
+        color: $text-style-color;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .contact-title-second {
+        font-size: 1.7rem;
+        position: relative;
+        top: -15px;
+        margin: 0;
+    }
+}
+
+.contact-map iframe {
+    width: 100%;
+    min-height: 400px;
+    padding: 5px 0 20px;
+    -webkit-filter: grayscale(10%);
+    -moz-filter: grayscale(10%);
+    -ms-filter: grayscale(10%);
+    filter: grayscale(10%);
+}
+
+.contact-bottom {
+    padding: 10px 0;
+    background-color: black;
+
+    .left {
+        padding-left: 15px;
+    }
+
+    .right {
+        width: auto;
+    }
+
+    .news-wrapper {
+        padding-right: 0;
+    }
+
+    .bottom-title {
+        font-family: 'Allura', cursive;
+        color: $text-style-color;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .address {
+        list-style-type: none;
+        font-size: 0.9rem;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .newsletter-title {
+        color: rgba(255, 255, 255, 0.6);
+        padding-top: 10px;
+    }
+
+    .newsletter-input {
+        display: inline-block;
+        background-color: inherit;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        text-indent: 5px;
+        font-style: italic;
+        height: 35px;
+
+        &:focus {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    .newsletter-submit {
+        padding: 0;
+        margin-left: -3px;
+        height: 35px;
+        background-color: $text-style-color;
+        border: none;
+        padding: 0 5px;
+        transition: background-color 0.1s linear;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(119, 115, 108);
+        }
+    }
+}
+
+.contact-bottom {
+    background-color: black;
+}
+
+@media (min-width: 768px) {
+    .contact-bottom {
+        .left {
+            padding-left: 20%;
+        }
+
+        .news-wrapper {
+            padding-right: 40%;
+        }
+    }
+
+    .newsletter-title {
+        padding-top: 30px;
+    }
+}
